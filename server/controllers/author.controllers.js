@@ -2,7 +2,7 @@ const Author = require('../models/author.model')
 
 module.exports = {
     getAllAuthors:(req,res) => {
-        Author.find()
+        Author.find().sort({name: 1})
         .then((results) => {
             res.json(results)
         }).catch((err) => {

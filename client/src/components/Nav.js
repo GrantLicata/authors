@@ -15,10 +15,10 @@ const Nav = () => {
       <div class="container-fluid">
         <div class="navbar-nav mx-auto">
           <a class="navbar-brand text-warning" href="/"><strong>Authors</strong></a>
-          <NavLink to='/' className='nav-link' style={({ isActive }) => 
+          {/* <NavLink to='/' className='nav-link' style={({ isActive }) => 
             isActive ? activeStyle : inactiveStyle } end>Home</NavLink>
           <NavLink to='/form' className='nav-link' style={({ isActive }) => 
-            isActive ? activeStyle : inactiveStyle } end>Form</NavLink>
+            isActive ? activeStyle : inactiveStyle } end>Form</NavLink> */}
         </div>
       </div>
     </nav>

@@ -10,6 +10,7 @@ const Edit = () => {
     const navigate = useNavigate()
     const { id } = useParams()
 
+    //Some logic in the use effect should be use to send a message if the id is not found in the database
     useEffect(() => {
         axios.get(`http://localhost:8000/api/author/${id}`)
         .then((res) => {
