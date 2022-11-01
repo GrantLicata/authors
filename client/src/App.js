@@ -4,6 +4,7 @@ import Nav from './components/Nav';
 import List from './components/List';
 import Form from './components/Form';
 import Edit from './components/Edit';
+import Error from './components/Error';
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <Route path="/" element={<List />}/>
             <Route path="/form" element={<Form />}/>
             <Route path="/edit/:id" element={<Edit />}/>
+            <Route path='/error' element={<Error />}/>
           </Routes>
         </BrowserRouter>
       </div>
