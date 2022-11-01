@@ -30,7 +30,7 @@ const List = () => {
 
     //DOM manipulator function that removes deleted items from the page
     const removeFromDom = (id) => {
-        setList(list.filter(author => author._id != id))
+        setList(list.filter(author => author._id !== id))
     }
 
   return (
