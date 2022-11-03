@@ -5,6 +5,7 @@ import List from './components/List';
 import Form from './components/Form';
 import Edit from './components/Edit';
 import Error from './components/Error';
+import LogReg from './components/LogReg';
 
 function App() {
     return (
@@ -16,6 +17,8 @@ function App() {
             <Route path="/form" element={<Form />}/>
             <Route path="/edit/:id" element={<Edit />}/>
             <Route path='/error' element={<Error />}/>
+            <Route path='*' element={<Error />}/>
+            <Route path='/logreg' element={<LogReg />}/>
           </Routes>
         </BrowserRouter>
       </div>
